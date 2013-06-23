@@ -20,10 +20,8 @@ shinyUI(bootstrapPage(
            "sets, and matches that were won."),
     
     tags$p("If you move the 'Point Win Probability' slider, the",
-           "data will reset. The 'Match Simulation Speed' slider",
-           "controls the delay between simulated matches.",
-           "The error bars on the graph represent the 95%",
-           "confidence interval."),
+           "data will reset. The error bars on the graph represent",
+           "the 95% confidence interval."),
   
     tags$p("I created this web-app after", 
            tags$a(href = "http://statcheck.wordpress.com/2013/05/30/monte-carlo-tennis/", "blogging"),

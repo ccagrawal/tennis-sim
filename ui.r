@@ -7,10 +7,10 @@ shinyUI(bootstrapPage(
   headerPanel("Monte Carlo Simulations in Tennis"),
   sidebarPanel(
     sliderInput("winP1", "Point Win Probability:",
-                min = 0, max = 1, value = .55, step = .005),
+                min = 0, max = 1, value = .535, step = .005),
     tags$br(),
     sliderInput("delay", "Match Simulation Speed:",
-                min = 1, max = 5, value = 2, step = 1),
+                min = 1, max = 10, value = 1, step = 1),
     tags$br(),
     
     tags$p("This app simulates tennis matches. Input",

@@ -14,8 +14,10 @@ shinyServer(function(input, output, session) {
   })
   
   values <- reactive({
-    invalidateLater((12 - input$delay) * 100, session)
-    simData <<- as.data.frame(simMatch(input$winP1, simData)[2])
+    invalidateLater(1000 + 70 * input$delay, session)
+    for (i in 1:input$delay) {
+      simData <<- as.data.frame(simMatch(input$winP1, simData)[2])
+    }
     simData
   })
   
